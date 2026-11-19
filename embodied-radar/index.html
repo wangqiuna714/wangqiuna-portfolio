@@ -1,141 +1,75 @@
-
 <!doctype html>
 <html lang="zh-CN">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="全球具身智能产业雷达">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="全球具身智能产业雷达：技术、企业、论文、应用、招聘和人物访谈。">
 <title>具身智能产业雷达 | Embodied Intelligence Radar</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="topbar">
-<a class="brand" href="#top">
-<span class="brand-mark">E</span>
-<span><b>具身智能产业雷达</b><small>EMBODIED INTELLIGENCE RADAR</small></span>
-</a>
-<div class="top-actions">
-<span id="updateStatus" class="status">正在读取数据</span>
-<button id="refreshBtn" class="ghost">刷新数据</button>
-</div>
-</header>
-
+<header class="topbar"><a class="brand" href="#top"><span class="brand-mark">E</span><span><b>具身智能产业雷达</b><small>EMBODIED INTELLIGENCE RADAR</small></span></a><div class="top-actions"><span id="updateStatus" class="status">正在读取数据</span><button id="refreshBtn" class="ghost">刷新数据</button></div></header>
 <main id="top">
-<section class="hero">
-<div class="eyebrow">PHYSICAL AI · INDUSTRY INTELLIGENCE</div>
-<h1>看见机器人产业<br><em>真实发生的变化</em></h1>
-<p>聚合全球具身智能技术、企业、科研、商业应用和人才动态。每条信息尽可能保留原始来源、发布时间与阅读入口。</p>
-<div class="hero-meta">
-<span>每日自动更新</span><span>来源可追溯</span><span>事实与判断分开</span>
+<section class="hero"><div class="eyebrow">PHYSICAL AI · INDUSTRY INTELLIGENCE</div><h1>看见机器人产业<br><em>真实发生的变化</em></h1><p>把全球具身智能新闻、技术论文、企业动态、真实应用与人才需求放在一个入口。保留来源、日期和证据类型；新闻线索不等于事实核验。</p><div class="hero-meta"><span>每日自动采集</span><span>来源可追溯</span><span>证据分级</span><span>研究与招聘并行</span></div></section>
+
+<section class="quick-panel">
+<div class="panel-title"><div><div class="eyebrow">RESEARCH SHORTCUTS</div><h2>研究入口</h2></div><span class="subtle">按主题直达</span></div>
+<div class="shortcut-grid">
+<a href="https://arxiv.org/search/?query=embodied+robotics&searchtype=all" target="_blank" rel="noopener"><b>最新论文</b><span>arXiv · 具身智能与机器人</span></a>
+<a href="https://www.google.com/search?q=embodied+AI+robotics+interview+founder" target="_blank" rel="noopener"><b>人物访谈</b><span>创始人、科学家、投资人</span></a>
+<a href="https://www.google.com/search?q=humanoid+robotics+conference+2026" target="_blank" rel="noopener"><b>大会日历</b><span>机器人与AI学术会议</span></a>
+<a href="https://www.google.com/search?q=具身智能+机器人+真实场景+部署" target="_blank" rel="noopener"><b>真实部署</b><span>工厂、物流、零售、医疗</span></a>
+<a href="https://www.google.com/search?q=具身智能+机器人+招聘+算法+控制" target="_blank" rel="noopener"><b>岗位趋势</b><span>具身算法、控制、数据、交付</span></a>
+<a href="https://github.com/trending" target="_blank" rel="noopener"><b>开源项目</b><span>机器人软件、模型与数据工具</span></a>
 </div>
 </section>
 
-<section class="media-hub" id="media-hub">
-<div class="section-head">
-<div>
-<div class="eyebrow">MEDIA & RESEARCH SOURCES</div>
-<h2>全球科技媒体直达</h2>
-<p class="hub-intro">国内外AI、机器人和科技产业媒体，点击名称即可进入官网。</p>
-</div>
-</div>
-
+<section class="media-hub" id="media-hub"><div class="panel-title"><div><div class="eyebrow">MEDIA & RESEARCH SOURCES</div><h2>全球科技媒体直达</h2><p class="hub-intro">这些链接是媒体和研究机构官网入口；点击后阅读原文。本站不会把媒体观点自动视为已核实事实。</p></div></div>
 <div class="media-groups">
-<div class="media-group">
-<h3>中国 · AI与科技产业媒体</h3>
-<div class="media-grid">
-<a class="media-link" href="https://www.infoq.cn/" target="_blank"><b>InfoQ｜极客邦</b><span>技术实践、开发者大会、企业访谈</span></a>
-<a class="media-link" href="https://www.geekpark.net/" target="_blank"><b>极客公园</b><span>科技公司、创业者、产业趋势</span></a>
-<a class="media-link" href="https://www.jiqizhixin.com/" target="_blank"><b>机器之心</b><span>AI研究、模型、论文与产业动态</span></a>
-<a class="media-link" href="https://www.jazzyear.com/" target="_blank"><b>甲子光年</b><span>科技产业研究、企业与资本</span></a>
-<a class="media-link" href="https://www.leiphone.com/" target="_blank"><b>雷峰网</b><span>AI、机器人、自动驾驶</span></a>
-<a class="media-link" href="https://www.qbitai.com/" target="_blank"><b>量子位</b><span>人工智能前沿与企业动态</span></a>
-<a class="media-link" href="https://www.aiera.com/" target="_blank"><b>新智元</b><span>AI前沿、科学家观点</span></a>
-<a class="media-link" href="https://www.36kr.com/" target="_blank"><b>36氪</b><span>科技创业、融资与商业化</span></a>
-</div>
-</div>
-
-<div class="media-group">
-<h3>全球 · AI与机器人媒体</h3>
-<div class="media-grid">
-<a class="media-link" href="https://www.therobotreport.com/" target="_blank"><b>The Robot Report</b><span>全球机器人产业与部署</span></a>
-<a class="media-link" href="https://spectrum.ieee.org/robotics" target="_blank"><b>IEEE Spectrum</b><span>机器人技术与工程报道</span></a>
-<a class="media-link" href="https://techcrunch.com/category/artificial-intelligence/" target="_blank"><b>TechCrunch AI</b><span>AI创业、融资和产品</span></a>
-<a class="media-link" href="https://www.technologyreview.com/topic/artificial-intelligence/" target="_blank"><b>MIT Technology Review</b><span>AI研究与产业影响</span></a>
-<a class="media-link" href="https://venturebeat.com/category/ai/" target="_blank"><b>VentureBeat AI</b><span>企业AI与商业应用</span></a>
-<a class="media-link" href="https://www.the-decoder.com/" target="_blank"><b>The Decoder</b><span>全球AI模型和研究</span></a>
-<a class="media-link" href="https://huggingface.co/blog" target="_blank"><b>Hugging Face</b><span>开源模型与数据集</span></a>
-<a class="media-link" href="https://deepmind.google/discover/blog/" target="_blank"><b>Google DeepMind</b><span>官方AI研究成果</span></a>
-<a class="media-link" href="https://developer.nvidia.com/blog/" target="_blank"><b>NVIDIA Developer</b><span>机器人仿真与开发平台</span></a>
-</div>
-</div>
-</div>
-</section>
+<div class="media-group"><h3>中国 · AI与科技产业媒体</h3><div class="media-grid">
+<a class="media-link" href="https://www.infoq.cn/" target="_blank" rel="noopener"><b>InfoQ｜极客邦</b><span>技术实践、开发者大会、企业技术访谈</span></a>
+<a class="media-link" href="https://www.geekpark.net/" target="_blank" rel="noopener"><b>极客公园</b><span>科技公司、创业者、产品与产业趋势</span></a>
+<a class="media-link" href="https://www.jiqizhixin.com/" target="_blank" rel="noopener"><b>机器之心</b><span>AI研究、模型、论文与产业动态</span></a>
+<a class="media-link" href="https://www.jazzyear.com/" target="_blank" rel="noopener"><b>甲子光年</b><span>科技产业研究、企业案例与资本</span></a>
+<a class="media-link" href="https://www.leiphone.com/" target="_blank" rel="noopener"><b>雷峰网</b><span>AI、机器人、自动驾驶与技术产业链</span></a>
+<a class="media-link" href="https://www.qbitai.com/" target="_blank" rel="noopener"><b>量子位</b><span>AI前沿、模型发布与企业动态</span></a>
+<a class="media-link" href="https://www.aiera.com/" target="_blank" rel="noopener"><b>新智元</b><span>AI前沿、科学家观点与产业观察</span></a>
+<a class="media-link" href="https://www.36kr.com/" target="_blank" rel="noopener"><b>36氪</b><span>科技创业、融资、商业化与公司新闻</span></a>
+</div></div>
+<div class="media-group"><h3>全球 · AI与机器人媒体</h3><div class="media-grid">
+<a class="media-link" href="https://www.therobotreport.com/" target="_blank" rel="noopener"><b>The Robot Report</b><span>全球机器人产业、产品与部署</span></a>
+<a class="media-link" href="https://spectrum.ieee.org/robotics" target="_blank" rel="noopener"><b>IEEE Spectrum</b><span>机器人技术深度报道与工程进展</span></a>
+<a class="media-link" href="https://techcrunch.com/category/artificial-intelligence/" target="_blank" rel="noopener"><b>TechCrunch AI</b><span>AI创业公司、融资与产品</span></a>
+<a class="media-link" href="https://www.technologyreview.com/topic/artificial-intelligence/" target="_blank" rel="noopener"><b>MIT Technology Review</b><span>AI研究、技术影响与产业分析</span></a>
+<a class="media-link" href="https://venturebeat.com/category/ai/" target="_blank" rel="noopener"><b>VentureBeat AI</b><span>企业AI、模型与商业化</span></a>
+<a class="media-link" href="https://www.the-decoder.com/" target="_blank" rel="noopener"><b>The Decoder</b><span>全球AI模型、研究和公司动态</span></a>
+<a class="media-link" href="https://huggingface.co/blog" target="_blank" rel="noopener"><b>Hugging Face</b><span>开源模型、数据集与工具</span></a>
+<a class="media-link" href="https://deepmind.google/discover/blog/" target="_blank" rel="noopener"><b>Google DeepMind</b><span>官方AI与机器人研究发布</span></a>
+<a class="media-link" href="https://developer.nvidia.com/blog/" target="_blank" rel="noopener"><b>NVIDIA Developer</b><span>机器人仿真、算力与开发平台</span></a>
+<a class="media-link" href="https://www.therobotreport.com/" target="_blank" rel="noopener"><b>Robotics 24/7</b><span>机器人自动化与行业部署</span></a>
+</div></div>
+<div class="media-group"><h3>学术与开发者来源</h3><div class="media-grid">
+<a class="media-link" href="https://arxiv.org/list/cs.RO/recent" target="_blank" rel="noopener"><b>arXiv · Robotics</b><span>机器人学最新预印本</span></a>
+<a class="media-link" href="https://www.roboticsconference.org/" target="_blank" rel="noopener"><b>RSS</b><span>Robotics: Science and Systems</span></a>
+<a class="media-link" href="https://www.ieee-ras.org/conferences-workshops" target="_blank" rel="noopener"><b>IEEE RAS</b><span>机器人会议与学术活动</span></a>
+<a class="media-link" href="https://www.ros.org/blog/" target="_blank" rel="noopener"><b>ROS</b><span>机器人操作系统生态动态</span></a>
+</div></div>
+</div></section>
 
 <section class="metrics" id="metrics"></section>
-
 <nav class="tabs" id="tabs">
-<button class="active" data-filter="all">全部动态</button>
-<button data-filter="news">行业新闻</button>
-<button data-filter="technology">技术突破 / 论文</button>
-<button data-filter="company">企业 / 融资 / 订单</button>
-<button data-filter="application">真实应用</button>
-<button data-filter="jobs">招聘岗位</button>
-<button data-filter="events">大会活动</button>
-<button data-filter="interviews">人物访谈</button>
-<button data-filter="industry">政策 / 产业</button>
+<button class="active" data-filter="all">全部</button><button data-filter="news">行业新闻</button><button data-filter="technology">技术 / 论文</button><button data-filter="company">企业 / 融资 / 订单</button><button data-filter="application">真实应用</button><button data-filter="jobs">招聘线索</button><button data-filter="events">大会活动</button><button data-filter="interviews">人物访谈</button><button data-filter="industry">政策 / 产业</button>
 </nav>
-
-<section class="layout">
-<div class="main-column">
-<div class="section-head">
-<div><div class="eyebrow">LATEST INTELLIGENCE</div><h2>最新行业动态</h2></div>
-<div class="controls">
-<input id="searchInput" type="search" placeholder="搜索企业、技术、岗位…">
-<select id="sortSelect">
-<option value="newest">最新优先</option>
-<option value="oldest">最早优先</option>
-</select>
-</div>
-</div>
-<div id="feed" class="feed"></div>
-<div id="empty" class="empty" hidden>没有找到匹配的信息。</div>
-</div>
-
+<section class="layout"><div class="main-column"><div class="section-head"><div><div class="eyebrow">LATEST INTELLIGENCE</div><h2>最新行业动态</h2><p id="resultMeta" class="subtle"></p></div><div class="controls"><input id="searchInput" type="search" placeholder="搜索企业、技术、人物、岗位…"><select id="sortSelect"><option value="newest">最新优先</option><option value="oldest">最早优先</option></select></div></div><div id="feed" class="feed"></div><button id="loadMore" class="load-more" hidden>加载更多</button><div id="empty" class="empty" hidden>没有找到匹配的信息。试试其他关键词。</div></div>
 <aside class="side-column">
-<section class="side-card">
-<div class="eyebrow">DAILY BRIEF</div>
-<h3>每日研究简报</h3>
-<p>跟踪全球机器人产业新闻、技术论文、企业进展和人才需求。</p>
-<ul>
-<li>技术进展与论文</li>
-<li>产品、融资、订单与交付</li>
-<li>实际部署与商业化</li>
-<li>职位职责与技能要求</li>
-</ul>
-</section>
-<section class="side-card">
-<div class="eyebrow">RESEARCH MAP</div>
-<h3>八大研究模块</h3>
-<ol>
-<li>行业大会</li><li>人物访谈</li><li>全球企业</li>
-<li>科研论文</li><li>真实应用</li><li>科技媒体</li>
-<li>技术与产业动态</li><li>职业与人才需求</li>
-</ol>
-</section>
-<section class="side-card">
-<div class="eyebrow">SOURCE POLICY</div>
-<h3>信息可信度规则</h3>
-<p>区分官方公告、媒体报道、论文预印本和待核实线索。企业宣传数据不自动视为独立验证结果。</p>
-<a href="README.md">查看数据与更新说明 →</a>
-</section>
-</aside>
-</section>
-
-<footer>
-<span>具身智能产业雷达 · 研究与学习用途</span>
-<span>信息可能存在发布延迟，请以原始来源为准。</span>
-</footer>
-</main>
-<script src="app.js"></script>
-</body>
-</html>
+<section class="side-card"><div class="eyebrow">JOB RADAR</div><h3>招聘与职业入口</h3><p>招聘平台搜索入口，不代表企业当前一定有空缺。请以招聘原页的职位状态、发布日期和岗位要求为准。</p><div class="job-links">
+<a href="https://www.zhipin.com/web/geek/job?query=%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD" target="_blank" rel="noopener">BOSS直聘 · 具身智能岗位 ↗</a>
+<a href="https://www.liepin.com/zhaopin/?key=%E6%9C%BA%E5%99%A8%E4%BA%BA" target="_blank" rel="noopener">猎聘 · 机器人岗位 ↗</a>
+<a href="https://www.linkedin.com/jobs/search/?keywords=Embodied%20AI%20Robotics" target="_blank" rel="noopener">LinkedIn · Embodied AI ↗</a>
+<a href="https://www.51job.com/" target="_blank" rel="noopener">前程无忧 ↗</a>
+</div></section>
+<section class="side-card"><div class="eyebrow">RESEARCH MAP</div><h3>八大研究模块</h3><ol><li>行业大会</li><li>人物访谈</li><li>全球企业</li><li>科研论文</li><li>真实应用</li><li>科技媒体</li><li>技术与产业动态</li><li>职业与人才需求</li></ol></section>
+<section class="side-card"><div class="eyebrow">EVIDENCE GUIDE</div><h3>信息证据等级</h3><ul><li><b>官方来源</b>：企业、机构或政府原文</li><li><b>学术预印本</b>：尚未必经同行评审</li><li><b>媒体报道</b>：需回到原文核对关键数字</li><li><b>招聘线索</b>：以招聘平台/企业职位页为准</li></ul></section>
+<section class="side-card"><div class="eyebrow">RESEARCH RULES</div><h3>使用说明</h3><p>新闻采集用于发现线索。融资、订单、量产、性能和客户部署等关键事实，必须查找企业公告、客户/合作方材料或权威文件进行交叉核验。</p><p>若某分类暂无可靠结果，会如实显示空缺，不以旧闻或虚构信息填充。</p></section>
+</aside></section>
+<footer><span>具身智能产业雷达 · 研究与学习用途</span><span>数据按来源发布时间展示；自动采集不等于事实核验。</span></footer>
+</main><script src="app.js"></script></body></html>
