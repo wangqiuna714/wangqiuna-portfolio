@@ -1,0 +1,13 @@
+{
+  "updated_at": "2026-11-19",
+  "timezone": "Asia/Shanghai",
+  "items": [
+    {"id":"xinhua-20261116","date":"2026-11-16","category":"application","title":"具身智能从技术想象力走向交付确定性","summary":"新华社报道指出，行业评价重点正从演示与估值转向真实场景交付、持续获单、可靠性与可复制性。报道提及银河通用在制造企业的上下料、分拣和物料搬运部署；具体规模与效果应以企业及客户披露为准。","source":"新华社","url":"https://www1.xinhuanet.com/tech/20261116/fc5a6409419e42a2871ba72b8f536bd2/c.html","confidence":"媒体报道"},
+    {"id":"shlab-job-20261116","date":"2026-11-16","category":"jobs","title":"上海人工智能实验室招聘：人形具身智能系统开发工程师","summary":"官方招聘页列出全身运动控制与强化学习、Sim-to-Real迁移、ROS 2实时控制框架、C++/Python、运动学与动力学等职责和技能要求。职位地点为上海。招聘状态可能变化，请以原页面为准。","source":"上海人工智能实验室官方招聘","url":"https://www.shlab.org.cn/joinus/detail/7651889731673000238?mode=social","confidence":"官方招聘"},
+    {"id":"beijing-plan-20261111","date":"2026-11-11","category":"company","title":"北京发布具身智能机器人产业高质量发展行动方案（2026—2028年）","summary":"公开报道转述北京市行动方案提出整机产能、重点企业、算力集群和应用场景等目标。政策目标是规划指标，不代表当前已经实现的产能或交付量。建议进一步核对北京市经信局原文。","source":"华尔街见闻（政策报道）","url":"https://news.qq.com/rain/a/20261111A0AIFX00","confidence":"政策报道，目标非实绩"},
+    {"id":"genesis-funding-20261117","date":"2026-11-17","category":"company","title":"Genesis AI宣布完成5亿美元A轮融资","summary":"《华尔街日报》报道该公司宣布完成5亿美元A轮融资，投后估值约35亿美元，研发方向为通用机器人及灵巧操作。融资金额与估值为报道中的公司融资信息；实际部署规模、持续运行时间和单位经济性仍需后续验证。","source":"The Wall Street Journal","url":"https://www.wsj.com/cio-journal/genesis-ai-a-robotics-startup-raises-500-million-35198457","confidence":"媒体报道"},
+    {"id":"robotera-xhand-20261116","date":"2026-11-16","category":"technology","title":"ROBOTERA开放XHAND 1 Pro-U订单：关注可穿戴示教到机器人操作的链路","summary":"行业报道提及XHAND 1 Pro-U相关商业发布及演示。开放订购不等于已完成大规模交付，实际灵巧操作能力、可靠性和客户使用情况需要独立验证。","source":"Biped.News","url":"https://biped.news/","confidence":"行业媒体，待交叉验证"},
+    {"id":"gitex-robotix-202612","date":"2026-11-11","category":"events","title":"GITEX World RobotiX计划于12月8日至11日在迪拜举行","summary":"主办方相关报道介绍该活动将展示人形机器人、工业自主机器、机器人助手和外骨骼等。活动预告不是技术成果证明，可用于跟踪后续现场演示与企业发布。","source":"阿联酋通讯社 WAM","url":"https://www.wam.ae/en/article/17iq7yg-gitex-world-robotix-2026-brings-humanoid-debuts","confidence":"活动预告"},
+    {"id":"industry-robot-week-20261109","date":"2026-11-09","category":"news","title":"一周具身智能动态：小米工厂长时作业、丰田设立机器人部门等","summary":"盖世汽车汇总了小米机器人汽车工厂长时作业挑战、丰田机器人组织布局、机器人控制器交付及生产线合作等动态。各项目的实际工时、订单交付和客户验收需分别核对原始公告。","source":"盖世汽车","url":"https://www.gkzhan.com/news/detail/197188.html","confidence":"媒体汇总"}
+  ]
+}
