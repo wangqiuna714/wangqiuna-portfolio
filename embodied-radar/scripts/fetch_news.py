@@ -19,7 +19,9 @@ QUERIES = [
     ('technology', 'robot learning VLA embodied robotics arXiv'),
     ('events', 'robotics humanoid embodied AI conference event 2026'),
     ('interviews', 'embodied AI robotics founder interview researcher CEO'),
-    ('interviews', '\u5177\u8eab\u667a\u80fd \u4e13\u8bbf OR \u521b\u59cb\u4eba \u79d1\u5b66\u5bb6 \u5bf9\u8bdd')
+    ('interviews', '\u5177\u8eab\u667a\u80fd \u4e13\u8bbf OR \u521b\u59cb\u4eba \u79d1\u5b66\u5bb6 \u5bf9\u8bdd'),
+    ('industry', 'embodied AI robotics policy industry strategy standards supply chain'),
+    ('industry', '\u5177\u8eab\u667a\u80fd \u4ea7\u4e1a\u653f\u7b56 OR \u673a\u5668\u4eba \u6807\u51c6 \u4f9b\u5e94\u94fe')
 ]
 
 def clean(s):
@@ -48,15 +50,24 @@ def source_name(item, link):
 
 def classify(category, title, desc):
     t = (title + ' ' + desc).lower()
-    if category == 'jobs' or any(k in t for k in ['招聘','engineer','career','job opening','hiring']): return 'jobs'
-    if any(k in t for k in ['arxiv','paper','论文','research','研究','vla','model','模型','learning']): return 'technology'
-    if any(k in t for k in ['funding','融资','investment','订单','order','revenue','acquisition']): return 'company'
-    if any(k in t for k in ['interview','访谈','专访','对话']): return 'interviews'
-    if any(k in t for k in ['interview','访谈','专访','对话']): return 'interviews'
-    if any(k in t for k in ['conference','summit','大会','论坛','展会']): return 'events'
-    if any(k in t for k in ['deployment','factory','warehouse','部署','工厂','落地','应用']): return 'application'
-    if any(k in t for k in ['deployment','factory','warehouse','部署','工厂','落地','应用']): return 'application'
-    return category if category in {'news','company','events'} else 'news'
+    # Classify by concrete topic using ordered rules to reduce mixed feeds.
+    if any(k in t for k in ['招聘','招募','career','job opening','hiring','职位']):
+        return 'jobs'
+    if any(k in t for k in ['融资','募资','投资','收购','并购','订单','中标','交付','量产','funding','investment','acquisition','purchase order','deployment contract']):
+        return 'company'
+    if any(k in t for k in ['访谈','专访','对话','采访','interview','podcast']):
+        return 'interviews'
+    if any(k in t for k in ['大会','峰会','论坛','展会','conference','summit','workshop','symposium']):
+        return 'events'
+    if any(k in t for k in ['论文','arxiv','preprint','benchmark','dataset','vla','vision-language-action','world model','robot learning','模仿学习','强化学习','运动控制','灵巧操作','manipulation','模型发布','技术报告']):
+        return 'technology'
+    if any(k in t for k in ['工厂','仓储','物流','医院','养老院','门店','部署','落地','应用案例','factory','warehouse','logistics','hospital','retail','real-world use']):
+        return 'application'
+    if any(k in t for k in ['政策','行动方案','标准','规范','产业规划','产业链','供应链','industry policy','regulation','standard']):
+        return 'industry'
+    if category in {'jobs','technology','company','events','interviews','application','industry'}:
+        return category
+    return 'news'
 
 def fetch_google(category, query):
     params = {'q': query, 'hl': 'zh-CN', 'gl': 'CN', 'ceid': 'CN:zh-Hans'}
