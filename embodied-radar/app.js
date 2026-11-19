@@ -1,4 +1,4 @@
-const labels={news:'行业新闻',technology:'技术论文',company:'企业与资本',jobs:'岗位招聘',events:'大会活动',application:'真实应用'};
+const labels={news:'行业新闻',technology:'技术突破 / 论文',company:'企业 / 融资 / 订单',jobs:'招聘岗位',events:'大会活动',interviews:'人物访谈',application:'真实应用',industry:'政策 / 产业'};
 let allItems=[],filter='all';
 const $=s=>document.querySelector(s);
 function esc(s=''){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
